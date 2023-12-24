@@ -6,8 +6,15 @@
   <style>
 
 html,body{
-  margin:0px;
+  /* margin:0px; */
   height:100%;
+}
+#mine{
+margin-left: 10%;
+font-size: x-large;
+}
+button{
+  font-size: medium;
 }
 .bg_heart{
   position:relative;
@@ -17,19 +24,20 @@ html,body{
   height:100%;
  overflow:hidden;
   background-image:url("https://i.pinimg.com/originals/51/d8/37/51d8374126446d495348b6032202126f.jpg");
-  background-size:100% 100%;
+  background-size:100% ;
   z-index:-1;
 }
 
 .container{
   position:absolute;
-  top:0;
+  top:30%;
   left:0;
   height:80%;
   width:100%;
   text-align:center;
   color:white;
   font-family:cursive;
+  font-size: xx-large;
 }
 
 
@@ -95,7 +103,7 @@ html,body{
 
 <br><br>
 
-<div>
+<div id="mine">
   <p>Will you be mine?</p>
   <button onclick="openNewWindow('yes')">Yes</button>
   <button onclick="openNewWindow('no')">No</button>
