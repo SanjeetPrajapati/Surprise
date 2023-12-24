@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="question-container" id="questionContainer">
+        <h2>Challenges for you</h2>
+
+        <div class="question" id="question1">
+            <h2>Question 1: Where did I propose to you ??</h2>
+            <label for="Question 1">Choose an option:</label>
+            <select id="Question 1" name="place">
+                <option value="option1">In college</option>
+                <option value="option2">In phoenix</option>
+                <option value="option3">At Marin Line</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+        </div>
+
+
+        <div class="question" id="question2">
+            <h2>Question 2: Date when you hurted me most?</h2>
+            <label for="Question 2">Choose an option:</label>
+            <select id="Question 2" name="2nddate">
+                <option value="option1">1 Oct</option>
+                <option value="option2">5 Oct</option>
+                <option value="option3">9 Oct</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+        </div>
+
+        <div class="question" id="question2">
+            <h2>Question 3: Where was Our First date ?</h2>
+            <label for="Question 3">Choose an option:</label>
+            <select id="Question 3" name="3date">
+                <option value="option1">In Phoenix</option>
+                <option value="option2">In rcity</option>
+                <option value="option3">At zuhu</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+        </div>
+<br>
+
+        <button id="submitQuiz" onclick="submitQuiz()">Submit Quiz</button>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            // Check if 'option2' is selected for all questions
+            var question1Value = document.getElementById("Question 1").value;
+            var question2Value = document.getElementById("Question 2").value;
+            var question3Value = document.getElementById("Question 3").value;
+    
+            if (question1Value === 'option1' && question2Value === 'option1' && question3Value === 'option1') {
+                // If all questions are answered with 'option2', submit the form and open a new window
+                // document.getElementById("questionContainer").submit();
+                alert("Love You Babe 😘😘😚!");
+                window.open('letter.html', target="_self");
+            } else {
+                // If not all questions are answered with 'option2', you can display an alert or take other actions
+                alert('Please select Correct options for all questions to submit the form .');
+                window.open('chal_inc.html', target="_self");
+            }
+        }
+    </script>
+    
+</body>
+</body>
+</html>
