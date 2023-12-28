@@ -20,13 +20,13 @@ function validateForm(event) {
     const name = document.getElementById("name").value;
     const password = document.getElementById("password").value;
 
-    if (name.toLowerCase() === 'bhaskar' && password === '26052006') {
+    if (name.toLowerCase() === 'fuddu' && password === '26052006') {
         alert("Login successful!");
 
         // Open Memory Lane section in a new window
         openMemoryLane();
     } else {
-        alert("You are wrong. Name: yours brother name, Pass :Yours birthday");
+        alert("You are wrong. Name: yours name, Pass :Yours birthday");
     }
 }
 
